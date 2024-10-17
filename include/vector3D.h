@@ -12,12 +12,12 @@ typedef struct
     float z;
 } Vector3D;
 
-Vector3D sum_vector3D(Vector3D *, Vector3D *);
+Vector3D sum_vector3D(const Vector3D *v1, const Vector3D *v2);
 
-Vector3D sub_vector3D(Vector3D *, Vector3D *);
+Vector3D sub_vector3D(const Vector3D *v1, const Vector3D *v2);
 
-Vector3D cross_vector3D(Vector3D *, Vector3D *);
+Vector3D cross_vector3D(const Vector3D *v1, const Vector3D *v2);
 
-float dot_vector3D(Vector3D *, Vector3D *);
+float dot_vector3D(const Vector3D *v1, const Vector3D *v2);
 
 #endif //VECTOR3D_H
